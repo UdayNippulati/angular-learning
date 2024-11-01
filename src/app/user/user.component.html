@@ -1,11 +1,9 @@
 <div>
-  <button>
+  <!-- Adding an event lisstiner in Angular, we should be able to use in between (), Event Binding -->
+  <button (click)="onSelectedUser()">
     <!-- Property Binding in angular -->
-    <img
-      [src]="'assets/users/' + selectedUser.avatar"
-      [alt]="selectedUser.name"
-    />
+    <img [src]="imagePath" [alt]="name" />
     <!-- String interpolation  in angular: basically for data - binding the data.-->
-    <span>{{ selectedUser.name }}</span>
+    <span>{{ name }}</span>
   </button>
 </div>
