@@ -1,0 +1,11 @@
+<div>
+  <button>
+    <!-- Property Binding in angular -->
+    <img
+      [src]="'assets/users/' + selectedUser.avatar"
+      [alt]="selectedUser.name"
+    />
+    <!-- String interpolation  in angular: basically for data - binding the data.-->
+    <span>{{ selectedUser.name }}</span>
+  </button>
+</div>
